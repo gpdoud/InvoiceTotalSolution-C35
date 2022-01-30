@@ -25,30 +25,30 @@ namespace InvoiceTotal {
             decimal subtotal = Convert.ToDecimal(txtSubtotal.Text);
 
             decimal discountPercent = 0.0m;
-            if (customerType == "R" || customerType == "r") {
 
-                if (subtotal < 100)
-                    discountPercent = .0m;
-                else if (subtotal >= 100 && subtotal < 250)
+            switch (customerType) {
+                case "C":
+                    discountPercent = .2m;
+                    break;
+                case "R":
+                    if (subtotal < 100)
+                        discountPercent = .0m;
+                    else if (subtotal >= 100 && subtotal < 250)
+                        discountPercent = .1m;
+                    else if (subtotal >= 250 && subtotal < 500)
+                        discountPercent = .25m;
+                    else
+                        discountPercent = .3m;
+                    break;
+                case "T":
+                    if (subtotal < 500)
+                        discountPercent = .4m;
+                    else
+                        discountPercent = .5m;
+                    break;
+                default:
                     discountPercent = .1m;
-                else if (subtotal >= 250 && subtotal < 500)
-                    discountPercent = .25m;
-                else
-                    discountPercent = .3m;
-
-            } else if(customerType == "C" || customerType == "c") {
-
-                discountPercent = .2m;
-
-            } else if (customerType == "T" || customerType == "t") {
-
-                if (subtotal < 500)
-                    discountPercent = .4m;
-                else
-                    discountPercent = .5m;
-
-            } else {
-                discountPercent = .1m;
+                    break;
             }
 
             decimal disountAmount = subtotal * discountPercent;
