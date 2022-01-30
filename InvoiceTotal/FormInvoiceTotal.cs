@@ -26,17 +26,19 @@ namespace InvoiceTotal {
 
             decimal discountPercent = 0.0m;
             if (customerType == "R") {
+
                 if (subtotal < 100)
                     discountPercent = .0m;
                 else if (subtotal >= 100 && subtotal < 250)
                     discountPercent = .1m;
-                else if (subtotal >= 250)
+                else if (subtotal >= 250 && subtotal < 500)
                     discountPercent = .25m;
-            } else if(customerType == "C") {
-                if (subtotal < 250)
-                    discountPercent = .2m;
                 else
                     discountPercent = .3m;
+
+            } else if(customerType == "C") {
+
+                discountPercent = .2m;
                
             } else {
                 discountPercent = .4m;
