@@ -25,7 +25,7 @@ namespace InvoiceTotal {
             decimal subtotal = Convert.ToDecimal(txtSubtotal.Text);
 
             decimal discountPercent = 0.0m;
-            if (customerType == "R") {
+            if (customerType == "R" || customerType == "r") {
 
                 if (subtotal < 100)
                     discountPercent = .0m;
@@ -36,11 +36,11 @@ namespace InvoiceTotal {
                 else
                     discountPercent = .3m;
 
-            } else if(customerType == "C") {
+            } else if(customerType == "C" || customerType == "c") {
 
                 discountPercent = .2m;
 
-            } else if (customerType == "T") {
+            } else if (customerType == "T" || customerType == "t") {
 
                 if (subtotal < 500)
                     discountPercent = .4m;
