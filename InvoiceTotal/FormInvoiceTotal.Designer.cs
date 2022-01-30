@@ -33,80 +33,87 @@
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCustomerType = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 31);
+            this.label1.Location = new System.Drawing.Point(27, 101);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 15);
+            this.label1.Size = new System.Drawing.Size(68, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "&Subtotal:";
             // 
             // txtSubtotal
             // 
-            this.txtSubtotal.Location = new System.Drawing.Point(150, 28);
+            this.txtSubtotal.Location = new System.Drawing.Point(167, 97);
+            this.txtSubtotal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSubtotal.Name = "txtSubtotal";
-            this.txtSubtotal.Size = new System.Drawing.Size(118, 23);
-            this.txtSubtotal.TabIndex = 1;
+            this.txtSubtotal.Size = new System.Drawing.Size(134, 27);
+            this.txtSubtotal.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 75);
+            this.label2.Location = new System.Drawing.Point(27, 160);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 15);
+            this.label2.Size = new System.Drawing.Size(122, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Discount Percent:";
             // 
             // txtDiscountPercent
             // 
-            this.txtDiscountPercent.Location = new System.Drawing.Point(150, 72);
+            this.txtDiscountPercent.Location = new System.Drawing.Point(167, 156);
+            this.txtDiscountPercent.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDiscountPercent.Name = "txtDiscountPercent";
             this.txtDiscountPercent.ReadOnly = true;
-            this.txtDiscountPercent.Size = new System.Drawing.Size(118, 23);
+            this.txtDiscountPercent.Size = new System.Drawing.Size(134, 27);
             this.txtDiscountPercent.TabIndex = 3;
             // 
             // txtDiscountAmount
             // 
-            this.txtDiscountAmount.Location = new System.Drawing.Point(150, 116);
+            this.txtDiscountAmount.Location = new System.Drawing.Point(167, 215);
+            this.txtDiscountAmount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDiscountAmount.Name = "txtDiscountAmount";
             this.txtDiscountAmount.ReadOnly = true;
-            this.txtDiscountAmount.Size = new System.Drawing.Size(118, 23);
+            this.txtDiscountAmount.Size = new System.Drawing.Size(134, 27);
             this.txtDiscountAmount.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 119);
+            this.label3.Location = new System.Drawing.Point(27, 219);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 15);
+            this.label3.Size = new System.Drawing.Size(127, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Discount Amount:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 163);
+            this.label4.Location = new System.Drawing.Point(27, 277);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 15);
+            this.label4.Size = new System.Drawing.Size(45, 20);
             this.label4.TabIndex = 6;
             this.label4.Text = "Total:";
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(150, 160);
+            this.txtTotal.Location = new System.Drawing.Point(167, 273);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
-            this.txtTotal.Size = new System.Drawing.Size(118, 23);
+            this.txtTotal.Size = new System.Drawing.Size(134, 27);
             this.txtTotal.TabIndex = 7;
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(27, 221);
+            this.btnCalculate.Location = new System.Drawing.Point(27, 355);
+            this.btnCalculate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(75, 23);
+            this.btnCalculate.Size = new System.Drawing.Size(86, 31);
             this.btnCalculate.TabIndex = 8;
             this.btnCalculate.Text = "&Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
@@ -114,21 +121,40 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(193, 221);
+            this.btnExit.Location = new System.Drawing.Point(217, 355);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(86, 31);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(27, 41);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(108, 20);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Customer type:";
+            // 
+            // txtCustomerType
+            // 
+            this.txtCustomerType.Location = new System.Drawing.Point(167, 38);
+            this.txtCustomerType.Name = "txtCustomerType";
+            this.txtCustomerType.Size = new System.Drawing.Size(136, 27);
+            this.txtCustomerType.TabIndex = 1;
+            // 
             // FormInvoiceTotal
             // 
             this.AcceptButton = this.btnCalculate;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(306, 274);
+            this.ClientSize = new System.Drawing.Size(347, 436);
+            this.Controls.Add(this.txtCustomerType);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtTotal);
@@ -139,6 +165,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSubtotal);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormInvoiceTotal";
             this.Text = "Invoice Total";
             this.ResumeLayout(false);
@@ -158,5 +185,7 @@
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtCustomerType;
     }
 }
