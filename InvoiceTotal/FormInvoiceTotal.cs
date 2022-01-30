@@ -39,9 +39,16 @@ namespace InvoiceTotal {
             } else if(customerType == "C") {
 
                 discountPercent = .2m;
-               
+
+            } else if (customerType == "T") {
+
+                if (subtotal < 500)
+                    discountPercent = .4m;
+                else
+                    discountPercent = .5m;
+
             } else {
-                discountPercent = .4m;
+                discountPercent = .1m;
             }
 
             decimal disountAmount = subtotal * discountPercent;
